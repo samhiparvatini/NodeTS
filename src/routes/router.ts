@@ -1,16 +1,16 @@
 import { Router } from 'express';
 import { sampleHandler } from '../handlers/sampleHandler';
-import * as studentHandler from '../handlers/studentHandler';
+import * as bookHandler from '../handlers/bookHandler';
 
 const router = Router();
 
 router.get('/sample', sampleHandler);
 
 // Student CRUD routes
-router.post('/students', studentHandler.createStudent);
-router.get('/students', studentHandler.getAllStudents);
-router.get('/students/:studentId', studentHandler.getStudentById);
-router.put('/students/:studentId', studentHandler.updateStudent);
-router.delete('/students/:studentId', studentHandler.deleteStudent);
+router.post('/books', bookHandler.createBook);
+router.get('/books', bookHandler.getAllBooks);
+router.get('/books/:bookId', bookHandler.getBookById);
+router.put('/books/:bookId', bookHandler.updateBook);
+router.delete('/books/:bookId', bookHandler.deleteBook);
 
 export default router;

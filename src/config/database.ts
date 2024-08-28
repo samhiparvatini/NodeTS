@@ -2,9 +2,9 @@ import { Sequelize } from 'sequelize';
 import { ENV } from './env';
 
 export const sequelize = new Sequelize({
-    database: 'your_database_name',
-    username: 'your_database_user',
-    password: 'your_database_password',
+    database: 'books',
+    username: 'sammyparvatini',
+    password: 'SPcapitals26',
     host: 'localhost',
     dialect: 'postgres',
     port: 5432,
